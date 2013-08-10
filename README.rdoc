@@ -1,0 +1,1 @@
+This app is another sample from a tutorial set. Just testing stuff with static pages, primarily.
