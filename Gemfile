@@ -7,6 +7,12 @@ gem 'rails', '4.0.0'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+	gem 'guard-rspec'
+	gem 'spork-rails', github: 'sporkrb/spork-rails'
+ 	gem 'guard-spork', '1.5.0'
+ 	gem 'childprocess', '0.3.6'
+ 	require 'rbconfig'
+	gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -35,6 +41,8 @@ group :doc do
 end
 group :test do
 	gem 'capybara'
+	gem 'rb-notifu'
+	gem 'win32console'
 end
 group :production do
 	gem 'pg'
